@@ -1302,11 +1302,5 @@ function loadJson() {
   } else {
     setupGame();
   }
-})();
+()})();
 
-
-    
-    
-    //////////////////////////////////
-    // ONLY CHANGE ABOVE THIS POINT //
-    ////////////////////////////////
