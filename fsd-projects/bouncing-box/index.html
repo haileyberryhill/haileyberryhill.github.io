@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: rgb(36, 255, 233);
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -71,7 +71,7 @@
 
         // TODO 2 - Variable declarations
 var positionX = 0;
-        
+ var point = 0;       
 
 
 
@@ -84,8 +84,11 @@ var positionX = 0;
         //moves box to right edge
         function update() {
         moveBoxTo(positionX);
-          positionX += 10;
+        positionX += 10;
+        positionX = positionX + speed;
+        if (positionX >= boardWidth) {
         
+        }
        
 
         
@@ -102,7 +105,10 @@ var positionX = 0;
          */
         function handleBoxClick() {
 positionX = 0;
-
+changeBoxText = "points";
+points = points + 1;
+var speed = 10;
+speed += 3;
 
 
 
